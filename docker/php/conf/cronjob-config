@@ -1,0 +1,1 @@
+*/15 * * * * /var/www/html/backend/bin/console app:system:reserves:remove_expired
