@@ -15,7 +15,7 @@ services:
     depends_on:
       - tfg-backend
     networks:
-      - sportMatchClub
+      - tfg
       - internal
 
   tfg-backend:
@@ -33,7 +33,7 @@ services:
     depends_on:
       - tfg-database
     networks:
-       - sportMatchClub
+       - tfg
        - internal
 
   tfg-database:
@@ -49,7 +49,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_DB_PASS}
       PGDATA: /var/lib/postgres/data/pgdata
     networks:
-      - sportMatchClub
+      - tfg
       - internal
 
   tfg-mail-catcher:
@@ -59,7 +59,7 @@ services:
       - 1080:1080
       - 1025:1025
     networks:
-      - sportMatchClub
+      - tfg
       - internal
 
 
