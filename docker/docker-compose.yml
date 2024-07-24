@@ -67,7 +67,7 @@ volumes:
   postgres:
 
 networks:
-  sportMatchClub:
+  tfg:
     external: true
   internal:
     driver: bridge
